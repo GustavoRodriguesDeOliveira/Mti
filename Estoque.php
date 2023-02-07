@@ -2,13 +2,14 @@
 
     class Estoque{
 
+        protected string $codigo;
         protected string $nomep;
         protected string $quantidadep;
         protected string $datav;
         protected string $valorp;
 
-        public function __construct(string $nomep, string $quantidadep, string $datav, string $valorp){
-
+        public function __construct(int $codigo, string $nomep, string $quantidadep, string $datav, string $valorp){
+            $this->codigo = $codigo;
             $this->nomep = $nomep;
             $this->quantidadep = $quantidadep;
             $this->datav = $datav;
@@ -27,7 +28,7 @@
 
         public function __toString() : string
         {
-            return "<br>Nome do Produto: ".$this->nomep."<br>Quantidade de Produtos: ".$this->quantidadep."<br>Data de valide: ".$this->datav."<br>Valor do produto: ".$this->valorp;
+            return "<br>Nome do Produto: ".$this->$codigo."<br>Nome do Produto: ".$this->nomep."<br>Quantidade de Produtos: ".$this->quantidadep."<br>Data de valide: ".$this->datav."<br>Valor do produto: ".$this->valorp;
         }
           
     }

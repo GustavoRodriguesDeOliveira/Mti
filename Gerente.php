@@ -2,15 +2,15 @@
 
     class Gerente{
 
-        protected string $codigog;
+        protected string $codigo;
         protected string $nomeg;
         protected string $telefoneg;
         protected string $sexog;
         protected string $bairrog;
         protected string $salariog;
 
-        public function __construct(string $codigog, string $nomeg, string $telefoneg, string $sexog, string $bairrog, string $salariog){
-            $this->codigog = $codigog;
+        public function __construct(string $codigo, string $nomeg, string $telefoneg, string $sexog, string $bairrog, string $salariog){
+            $this->codigo = $codigo;
             $this->nomeg = $nomeg;
             $this->telefoneg = $telefoneg;
             $this->sexog = $sexog;
@@ -30,7 +30,7 @@
 
         public function __toString() : string
         {
-            return "<br>Código: ".$this->codigog."<br>Nome do : ".$this->nomeg."<br>Telefone: ".$this->telefoneg."<br>Sexo: ".$this->sexog."<br>Bairro: ".$this->bairrog."<br>Salário: ".$this->salariog;
+            return "<br>Código: ".$this->codigo."<br>Nome do : ".$this->nomeg."<br>Telefone: ".$this->telefoneg."<br>Sexo: ".$this->sexog."<br>Bairro: ".$this->bairrog."<br>Salário: ".$this->salariog;
         }
 
         public function calcular() : float

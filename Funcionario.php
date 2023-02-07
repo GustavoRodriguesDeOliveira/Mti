@@ -3,15 +3,15 @@
     class Funcionario{
 
         protected string $codigo;
-        protected string $nomef;
+        protected string $nome;
         protected string $telefone;
         protected string $sexo;
         protected string $bairro;
         protected string $salario;
 
-        public function __construct(string $codigo, string $nomef, string $telefone, string $sexo, string $bairro, string $salario){
+        public function __construct(string $codigo, string $nome, string $telefone, string $sexo, string $bairro, string $salario){
             $this->codigo = $codigo;
-            $this->nomef = $nomef;
+            $this->nomef = $nome;
             $this->telefone = $telefone;
             $this->sexo = $sexo;
             $this->bairro = $bairro;
@@ -30,7 +30,7 @@
 
         public function __toString() : string
         {
-            return "<br>Código: ".$this->codigo."<br>Nome do : ".$this->nomef."<br>Telefone: ".$this->telefone."<br>Sexo: ".$this->sexo."<br>Bairro: ".$this->bairro."<br>Salário: ".$this->salario;
+            return "<br>Código: ".$this->codigo."<br>Nome do : ".$this->nome."<br>Telefone: ".$this->telefone."<br>Sexo: ".$this->sexo."<br>Bairro: ".$this->bairro."<br>Salário: ".$this->salario;
         }
 
 
